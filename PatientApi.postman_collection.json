@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "6e0ee444-8293-43e4-ac6b-d1f0fb37e5d5",
+		"name": "PatientApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17766262"
+	},
+	"item": [
+		{
+			"name": "Get all clients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get client by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Patient/45ac6856-d318-47d1-b635-f6b67caa55a8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient",
+						"45ac6856-d318-47d1-b635-f6b67caa55a8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get clients by birthdate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Patient/birthDate=2024-09-05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient",
+						"birthDate=2024-09-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get clients by birthdate sa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Patient/birthDate=sa2024-09-05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient",
+						"birthDate=sa2024-09-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get clients by birthdate ap",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Patient/birthDate=ap2024-09-05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient",
+						"birthDate=ap2024-09-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get clients by birthdate eb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Patient/birthDate=eb2024-09-05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient",
+						"birthDate=eb2024-09-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get clients by birthdate gt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Patient/birthDate=gt2024-09-05T10:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient",
+						"birthDate=gt2024-09-05T10:00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get clients by birthdate ge",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Patient/birthDate=ge2024-09-05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient",
+						"birthDate=ge2024-09-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get clients by birthdate le",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Patient/birthDate=le2024-09-05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient",
+						"birthDate=le2024-09-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get clients by birthdate lt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/Patient/birthDate=lt2024-09-05T10:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient",
+						"birthDate=lt2024-09-05T10:00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": {\r\n    \"use\": \"string\",\r\n    \"family\": \"aaa\",\r\n    \"given\": [\r\n      \"string\"\r\n    ]\r\n  },\r\n  \"gender\": \"male\",\r\n  \"birthDate\": \"2024-09-05T11:09:34.879Z\",\r\n  \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update client",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": {\r\n    \"use\": \"string\",\r\n    \"family\": \"aaa\",\r\n    \"given\": [\r\n      \"Иванов\"\r\n    ]\r\n  },\r\n  \"gender\": \"male\",\r\n  \"birthDate\": \"2024-09-05T11:09:34.879Z\",\r\n  \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Patient/ea7d151a-5a68-493e-a069-a07f5b0c3da7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient",
+						"ea7d151a-5a68-493e-a069-a07f5b0c3da7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete client",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": {\r\n    \"use\": \"string\",\r\n    \"family\": \"aaa\",\r\n    \"given\": [\r\n      \"Иванов\"\r\n    ]\r\n  },\r\n  \"gender\": \"male\",\r\n  \"birthDate\": \"2024-09-05T11:09:34.879Z\",\r\n  \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/Patient/af50f771-d322-4bd0-a7da-d9ae82061ffc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"Patient",
+						"af50f771-d322-4bd0-a7da-d9ae82061ffc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
