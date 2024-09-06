@@ -48,8 +48,9 @@ using (var serviceScope = app.Services.GetService<IServiceScopeFactory>()?.Creat
 	context?.Database.Migrate();
 }
 
+app.UseSwagger();
+app.UseSwaggerUI();
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
